@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content-box">
+        <div class="heading">
+            <h1>Please enter your movie review : </h1>
+        </div>
+        <div>
+            <form class="form-group review-form" action="{{ url_for('results') }}", method="post" onsubmit="return validateTextArea()">
+                <textarea class="form-control textarea-review" name="review" id="review"></textarea>
+                <div class="message"></div>
+                <input type="submit" class="btn btn-primary btn-lg" value="Submit Review">
+            </form>
+        </div>
+    </div>
+{% endblock %}

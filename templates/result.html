@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content-box">
+        <div class="movie-review">
+            <h3> Your movie review : </h3><br>
+            <textarea class="form-control result-textarea" id="result-textarea" disabled> {{ data['content'] }}</textarea>
+        </div>
+
+        <div class="movie-prediction">
+            <h3>Prediction : </h3>
+
+            <div class="row">
+                <div class="col-lg-2 col-sm-4 col-md-3">
+                    <div class="prediction-content">
+                        This movie review is <strong id="prediction-label">{{ data['prediction'] }}</strong>.<br>
+                        <strong>Probability</strong> : {{ data['probability'] }}%
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 col-md-4">
+                    <div class="prediction-action" id="prediction-action">
+                        <button class="btn btn-success" id="correct_pred_btn" onclick="onPredictionReviewSubmit(true)">Correct</button>
+                        <button class="btn btn-danger" id="incorrect_pred_btn" onclick="onPredictionReviewSubmit(false)">Incorrect</button>
+                        <br>
+                        <button class="btn btn-lg btn-primary next-review-submit" id="next-review-submit" onclick="submitAnotherReview()">Submit another review !!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

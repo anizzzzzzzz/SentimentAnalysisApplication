@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{title}}</title>
+    {% else %}
+        <title>Movie Sentiment Classifier</title>
+    {% endif %}
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+</head>
+<body>
+    {% block content %}{% endblock %}
+
+    <script  type="text/javascript" src="{{ url_for('static', filename='js/validate.js') }}"></script>
+</body>
+</html>

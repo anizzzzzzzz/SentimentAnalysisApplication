@@ -1,0 +1,11 @@
+migrations
+venv
+__pycache__
+.idea
+
+app/sentiment_analysis.db
+app/__pycache__
+app/model/__pycache__
+app/service/__pycache__
+app/util/__pycache__
+app/view/__pycache__

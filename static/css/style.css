@@ -1,0 +1,78 @@
+body{
+    background-color: #abdde5;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.content-box{
+    /*height: 100vh;*/
+    width: 90%;
+    color:black;
+    margin-left:auto;
+    margin-right: auto;
+    /*background-color: #f8d7da;*/
+}
+
+.content-box h1{
+    margin: 20px 0 auto;
+    alignment: center;
+}
+
+.content-box .textarea-review{
+    margin: 20px auto;
+    height: auto;
+    min-height: 250px;
+    font-size: 20px;
+    color:black;
+    font-style: oblique;
+}
+
+.content-box input[type="submit"]{
+    float: right;
+}
+
+.content-box .message{
+    font-style: italic;
+    color:red;
+}
+
+.result-textarea{
+    height: auto;
+    margin: 10px auto;
+    width: 95%;
+    font-size: 20px;
+    color:black;
+    font-style: oblique;
+}
+
+.movie-review{
+    margin-bottom: 60px;
+}
+
+.movie-prediction{
+    margin-bottom: 60px;
+}
+
+.movie-prediction .row{
+    margin: 10px auto !important;
+    width: 95%;
+    font-size: 18px;
+    color:black;
+    font-style: oblique;
+}
+
+.movie-prediction button{
+    margin: 10px 0;
+}
+
+.movie-prediction .next-review-submit{
+    display: none;
+}
+
+.error-message{
+    margin: 50px auto;
+    horiz-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    color:red;
+    text-align: center;
+}
